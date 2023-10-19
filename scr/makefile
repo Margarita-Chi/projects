@@ -1,7 +1,7 @@
 all: menu 
  
 menu: menu.o input_action.o input_array.o action.o index_first_even.o index_last_odd.o sum_between_even_odd.o sum_before_even_and_after_odd.o 
-	gcc menu.o input_action.o input_array.o action.o index_first_even.o index_last_odd.o sum_between_even_odd.o sum_before_even_and_after_odd.o -o menu
+	gcc -std=gnu99 menu.o input_action.o input_array.o action.o index_first_even.o index_last_odd.o sum_between_even_odd.o sum_before_even_and_after_odd.o -o menu
  
 menu.o: menu.c 
 	gcc -std=gnu99 -c menu.c 
